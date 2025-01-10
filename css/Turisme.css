@@ -1,0 +1,131 @@
+/* Fondo del cuerpo de la página */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+main{
+    margin-top: 40px;
+}
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1b1b1b;
+    border: 3px solid #ffc107;
+    border-radius: 15px;
+    box-shadow: 0 6px 25px rgba(255, 193, 7, 0.3);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.car h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 2px 5px rgba(255, 193, 7, 0.6);
+}
+.car-content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.car-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+.car-image img:hover {
+    transform: scale(1.05);
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.car-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.car-details ul li {
+    font-size: 14px;
+    color: #f4f4f4;
+    background-color: #444444;
+    padding: 5px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.car-details ul li:hover {
+    background-color: #ffc107;
+    color: #1b1b1b;
+}
+
+.car-details ul li img {
+    width: 30px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(2);
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.price .pay-now,
+.price .pay-later {
+    padding: 12px;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center;
+    width: 180px;
+    color: #1b1b1b;
+    background-color: #ffc107;
+    cursor: pointer;
+}
+.price .pay-now:hover,
+.price .pay-later:hover {
+    background-color: #1b1b1b;
+    color: #ffc107;
+    border-color: #ffc107;
+}
+a {
+    text-decoration: none;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #1b1b1b, #2a2a2a, #1b1b1b);
+    z-index: -1;
+  }
+
+

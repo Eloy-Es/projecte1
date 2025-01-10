@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../fonts/dancing-script/DancingScript-Regular.otf') format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT sans';
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #1b1b1b, #2a2a2a, #1b1b1b);
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logotip {
+  position: absolute;
+  left: 0;
+  width: 14%;                  
+  height: auto; 
+  margin-left: 30px;
+}
+
+h1, .main-title {
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin: 20px auto;
+  line-height: 1.2;
+}
+
+.nav-principal {
+  background-color: #333333;
+  padding: 10px;
+}
+
+.nav-principal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-principal li {
+  margin: 0;
+}
+
+.nav-principal a {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.nav-principal a:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333333;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p a,
+.contact-info p a,
+.footer-links a {
+  color: #daec17;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #d4af37;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+
+@media (max-width: 768px) {
+    
+  body {
+    background-color: #333;
+  }
+
+  .main-title {
+    font-size: 28px;
+  }
+
+  .nav-principal ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+  }
+
+  .nav-principal li {
+    margin: 0;
+  }
+
+  .nav-principal a {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 1.2;
+  }
+
+  footer {
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-principal ul {
+    gap: 5px;
+  }
+
+  .main-title {
+    font-size: 22px;
+}
+
+  .nav-principal a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px auto;
+    line-height: 1.2;
+  }
+
+  h2, h3 {
+    font-size: 16px;
+  }
+  
+  footer {
+    padding: 8px 0;
+  }
+}
