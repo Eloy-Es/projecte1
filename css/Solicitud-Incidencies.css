@@ -1,7 +1,3 @@
-body {
-    margin: 0;
-}
-
 .container {
     background-color:#FFF8E1;
     padding: 20px;
@@ -74,9 +70,6 @@ button:hover {
 .sub-opcions {
     margin-left: 20px;
 }
-@font-face {
-    font-family: 'Dancing Script';
-    src: url('../fonts/dancing-script/DancingScript-Regular.otf') format('opentype');
-}
+
 
   

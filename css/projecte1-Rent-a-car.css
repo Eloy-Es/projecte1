@@ -101,3 +101,12 @@ h2,h3{
 .boto:hover {
   background-color: #E67E22;
 }
+
+.contenedor-iframe {
+  padding-bottom: 30px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
