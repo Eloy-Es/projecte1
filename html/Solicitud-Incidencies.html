@@ -1,161 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Formulari de Sol·licitud o Incidència</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Formulari per solicitar cotxe o per informar sobre qualsevol cosa sobre el vehicle">
-        <meta name="author" content="Eloy Escobedo Martínez">
-        <link rel="icon" href="../img/logotipfons.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="../css/Solicitud-Incidencies.css">
-        <link rel="stylesheet" href="../css/global.css">
-    </head>
-    <body>
-        <header>
-                <h1 class="main-title">
-                  <img class="logotip" src="../img/logotip.png" alt="logo alquiler de cotxes">LLOGUER DE COTXES
-              </h1>
-            <nav class="nav-principal">
-                <ul>
-                  <li><a href="../index.html" title="Pàgina inicial amb informació sobre el servei i enllaços a altres pàgines">Inici</a></li>
-                  <li><a href="Serveis.html" title="Descobreix les modalitats de serveis que oferim, inclòs lloguer de vehicles">Serveis</a></li>
-                  <li><a href="Turisme.html" title="Visualitza els vehicles disponibles per al lloguer en turisme">Cotxe Turisme</a></li>
-                  <li><a href="Solicitud-Incidencies.html" title="Accedeix a la pàgina per sol·licitar el lloguer de cotxes o per reportar incidències">Sol·licitud / Incidències</a></li>
-                  <li><a href="Contacte.html" title="Contacta'ns per a més informació o per atenció al client">Contacte</a></li>
-                  <li><a href="infograifa.html" title="infografia">Infografia</a></li>
-                </ul>
-              </nav>
-            </header>
-            <main>
-        <div class="container">
-            <h2>Formulari de Sol·licitud o Incidència</h2>
-    
-            <label for="form-type">Selecciona el tipus de formulari:</label>
-            <select id="form-type">
-                <option value="sollicitud">Sol·licitud de lloguer</option>
-                <option value="incidencia">Incidència</option>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulari de Sol·licitud o Incidència</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formulari per solicitar cotxe o per informar sobre qualsevol cosa sobre el vehicle" />
+    <meta name="author" content="Eloy Escobedo Martínez" />
+    <link rel="icon" href="../img/logotipfons.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/Solicitud-Incidencies.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">
+        <img class="logotip" src="../img/logotip.png" alt="logo alquiler de cotxes" />LLOGUER DE COTXES
+      </h1>
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="../index.html">Inici</a></li>
+          <li><a href="Serveis.html">Serveis</a></li>
+          <li><a href="Turisme.html">Cotxe Turisme</a></li>
+          <li><a href="Solicitud-Incidencies.html">Sol·licitud / Incidències</a></li>
+          <li><a href="Contacte.html">Contacte</a></li>
+          <li><a href="infograifa.html">Infografia</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h2>Formulari de Sol·licitud o Incidència</h2>
+
+        <label for="form-type">Selecciona el tipus de formulari:</label>
+        <select id="form-type" aria-label="Selecciona el tipus de formulari">
+          <option value="sollicitud">Sol·licitud de lloguer</option>
+          <option value="incidencia">Incidència</option>
+        </select>
+
+        <form id="sollicitud-form" class="formulario" style="display: block;">
+          <h2>Sol·licitud de Lloguer de Cotxe</h2>
+          <fieldset>
+            <legend>Dades Personals</legend>
+
+            <label for="nom">Nom i Cognoms:</label>
+            <input type="text" id="nom" name="nom" aria-label="Nom i Cognoms" required />
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" aria-label="DNI" required />
+
+            <label for="edat">Edat del Client:</label>
+            <input type="range" id="edat" name="edat" min="18" max="80" value="25" aria-label="Edat del Client" />
+            <span id="edat-valor">25</span>
+
+            <label for="telefon">Telèfon:</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="xxx xx xx xx" aria-label="Telèfon" required />
+
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" name="email" placeholder="exemple@gmail.com" aria-label="Gmail" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalls del Cotxe</legend>
+
+            <label for="tipus-cotxe">Tipus de Cotxe:</label>
+            <select id="tipus-cotxe" name="tipus-cotxe" aria-label="Tipus de Cotxe">
+              <option value="Renault Clio">Renault Clio</option>
+              <option value="Hyundai i10">Hyundai i10</option>
+              <option value="Volkswagen Polo">Volkswagen Polo</option>
+              <option value="Kia Rio">Kia Rio</option>
+              <option value="Citroën C1">Citroën C1</option>
+              <option value="Peugeot 208">Peugeot 208</option>
             </select>
-            
-            <form id="sollicitud-form" class="formulario" style="display: block;">
-                <h2>Sol·licitud de Lloguer de Cotxe</h2>
-                <fieldset>
-                    <legend>Dades Personals</legend>
-                    <label for="nom">Nom i Cognoms:</label>
-                    <input type="text" id="nom" name="nom" required>
-    
-                    <label for="dni">DNI:</label>
-                    <input type="text" id="dni" name="dni" required>
-    
-                    <label for="edat">Edat del Client:</label>
-                    <input type="range" id="edat" name="edat" min="18" max="80" value="25">
-                    <span id="edat-valor">25</span>
-                    <label for="telefon">Telèfon:</label>
-                    <input type="tel" id="telefon" name="telefon" placeholder="xxx xx xx xx" required>
 
-                    <label for="email">Gmail:</label>
-                    <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Detalls del Cotxe</legend>
-                    <label for="tipus-cotxe">Tipus de Cotxe:</label>
-                    <select id="tipus-cotxe" name="tipus-cotxe">
-                        <option value="Renault Clio">Renault Clio</option>
-                        <option value="Hyundai i10">Hyundai i10</option>
-                        <option value="Volkswagen Polo">Volkswagen Polo</option>
-                        <option value="Kia Rio">Kia Rio</option>
-                        <option value="Citroën C1">Citroën C1</option>
-                        <option value="Peugeot 208">Peugeot 208</option>
-                    </select>
-    
-                    <label for="data">Data de Lloguer:</label>
-                    <input type="date" id="data" name="data" required>
-    
-                    <label for="hora">Hora de Recollida:</label>
-                    <input type="time" id="hora" name="hora" required>
-    
-                    <h2>Plans de Lloguer</h2>
-                    <div class="plans">
-                        <label><input type="radio" name="plan" value="pla-diari"> Pla Diari</label>
-                        <label><input type="radio" name="plan" value="pla-capsetmana"> Pla Cap de Setmana</label>
-                        <label><input type="radio" name="plan" value="pla-setmanal"> Pla Setmanal</label>
-                        <label><input type="radio" name="plan" value="pla-mensual"> Pla Mensual</label>
-                    </div>
-                    
-    
-                    <label>Polítiques Addicionals:</label>
-                    <div class="politiques">
-                        <label> <input type="radio" name="politica" value="politica-combustible" checked required> Política de Combustible</label>
-                        <div class="sub-opcions">
-                            <label><input type="radio" name="subcombustible" value="Diposit PLE-PLE"> Diposit PLE-PLE</label>
-                            <label><input type="radio" name="subcombustible" value="Pagament de combustible"> Pagament de combustible</label>
-                        </div>
-                        <label><input type="checkbox" name="politica" value="diposit-seguretat"> Dipòsit de Seguretat</label>
-                        <label><input type="checkbox" name="politica" value="responsabilitat-danys"> Responsabilitat per Danys</label>
-                        <label><input type="checkbox" name="politica" value="cobertura-robatori"> Cobertura per Robatori</label>
-                        <label><input type="checkbox" name="politica" value="asseguranca-vidres-pneumatics"> Assegurança de Vidres i Pneumàtics</label>
-                        <label><input type="checkbox" name="politica" value="asseguranca-totrisc"> Assegurança a Tot Risc</label>
-                    </div>
-                </fieldset>
-    
-                <button type="submit">Enviar Sol·licitud</button>
-            </form>
+            <label for="data">Data de Lloguer:</label>
+            <input type="date" id="data" name="data" aria-label="Data de Lloguer" required />
 
-            <form id="incidencia-form" class="formulario" style="display: none;">
-                <h2>Informe d'Incidència</h2>
-    
-                <fieldset>
-                    <legend>Dades del Client</legend>
-                    <label for="nom-incidencia">Nom i Cognoms:</label>
-                    <input type="text" id="nom-incidencia" name="nom-incidencia" required>
-    
-                    <label for="dni-incidencia">DNI:</label>
-                    <input type="text" id="dni-incidencia" name="dni-incidencia" required>
-                </fieldset>
-    
-                <fieldset>
-                    <legend>Detalls de la Incidència</legend>
-                    <label for="model-cotxe">Model de Cotxe:</label>
-                    <select id="model-cotxe" name="model-cotxe">
-                        <option value="Renault Clio">Renault Clio</option>
-                        <option value="Hyundai i10">Hyundai i10</option>
-                        <option value="Volkswagen Polo">Volkswagen Polo</option>
-                        <option value="Kia Rio">Kia Rio</option>
-                        <option value="Citroën C1">Citroën C1</option>
-                        <option value="Peugeot 208">Peugeot 208</option>
-                    </select>    
-                    
-                    <label for="ubicacio">Ubicació Actual del Cotxe:</label>
-                    <input type="text" id="ubicacio" name="ubicacio" required>
-    
-                    <label for="descripcio">Descripció de la Incidència:</label>
-                    <textarea id="descripcio" name="descripcio" rows="5" placeholder="Descriu el problema..." required></textarea>
-                </fieldset>
-    
-                <button type="submit">Enviar Incidència</button>
-            </form>
-        </div>
-        </main>
-        <script src="script.js"></script>
+            <label for="hora">Hora de Recollida:</label>
+            <input type="time" id="hora" name="hora" aria-label="Hora de Recollida" required />
 
-        <footer>
-            <div class="footer-content">
-                <p>© 2024 Rent-a-car EloyMobile. Amb tots el drets reservats | <a href="politica.html" title="Llegeix la nostra política de privacitat">Política de Privacitat</a></p>
-                
-                <div class="contact-info">
-                    <p><strong>Adreça:</strong> Carrer d'Antoni Tàpies, 34-38, 08820 El Prat de Llobregat, Barcelona, España</p>
-                    <p><strong>Correu electrònic:</strong> <a href="mailto:atencioclient@eloymobile.com">atencioclient@eloymobile.com</a></p>
-                    <p><strong>Telèfon:</strong> <a href="tel:+34624342312">+34 624 34 23 12</a></p>
-                    <p><strong>Horari d'atenció:</strong> Dilluns a Divendres, 9:00 - 18:00</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="https://mail.google.com/">Enviar Correu</a></li>
-                        <li><a href="Solicitud-Incidencies.html">Formulari de Sol·licitud i Incidències</a></li>
-                        <li><a href="https://www.google.com/maps?q=Carrer+d'Antoni+Tàpies,+34-38,+08820+El+Prat+de+Llobregat,+Barcelona" target="_blank">Veure'ns al mapa</a></li>
-                    </ul>
-                </div>
+            <div role="group" aria-labelledby="plans-title">
+              <h2 id="plans-title">Plans de Lloguer</h2>
+              <label><input type="radio" name="plan" value="pla-diari" /> Pla Diari</label>
+              <label><input type="radio" name="plan" value="pla-capsetmana" /> Pla Cap de Setmana</label>
+              <label><input type="radio" name="plan" value="pla-setmanal" /> Pla Setmanal</label>
+              <label><input type="radio" name="plan" value="pla-mensual" /> Pla Mensual</label>
             </div>
-          </footer>
-    </body>
+
+            <div role="group" aria-labelledby="politica-title">
+              <label id="politica-title">Polítiques Addicionals:</label>
+              <label><input type="radio" name="politica" value="politica-combustible" required /> Política de Combustible</label>
+              <div class="sub-opcions">
+                <label><input type="radio" name="subcombustible" value="Diposit PLE-PLE" /> Diposit PLE-PLE</label>
+                <label><input type="radio" name="subcombustible" value="Pagament de combustible" /> Pagament de combustible</label>
+              </div>
+              <label><input type="checkbox" name="politica" value="diposit-seguretat" /> Dipòsit de Seguretat</label>
+              <label><input type="checkbox" name="politica" value="responsabilitat-danys" /> Responsabilitat per Danys</label>
+              <label><input type="checkbox" name="politica" value="cobertura-robatori" /> Cobertura per Robatori</label>
+              <label><input type="checkbox" name="politica" value="asseguranca-vidres-pneumatics" /> Assegurança de Vidres i Pneumàtics</label>
+              <label><input type="checkbox" name="politica" value="asseguranca-totrisc" /> Assegurança a Tot Risc</label>
+            </div>
+          </fieldset>
+
+          <button type="submit">Enviar Sol·licitud</button>
+        </form>
+
+        <form id="incidencia-form" class="formulario" style="display: none;">
+          <h2>Informe d'Incidència</h2>
+
+          <fieldset>
+            <legend>Dades del Client</legend>
+            <label for="nom-incidencia">Nom i Cognoms:</label>
+            <input type="text" id="nom-incidencia" name="nom-incidencia" aria-label="Nom i Cognoms" required />
+
+            <label for="dni-incidencia">DNI:</label>
+            <input type="text" id="dni-incidencia" name="dni-incidencia" aria-label="DNI" required />
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalls de la Incidència</legend>
+            <label for="model-cotxe">Model de Cotxe:</label>
+            <select id="model-cotxe" name="model-cotxe" aria-label="Model de Cotxe">
+              <option value="Renault Clio">Renault Clio</option>
+              <option value="Hyundai i10">Hyundai i10</option>
+              <option value="Volkswagen Polo">Volkswagen Polo</option>
+              <option value="Kia Rio">Kia Rio</option>
+              <option value="Citroën C1">Citroën C1</option>
+              <option value="Peugeot 208">Peugeot 208</option>
+            </select>
+
+            <label for="ubicacio">Ubicació Actual del Cotxe:</label>
+            <input type="text" id="ubicacio" name="ubicacio" aria-label="Ubicació Actual del Cotxe" required />
+
+            <label for="descripcio">Descripció de la Incidència:</label>
+            <textarea id="descripcio" name="descripcio" rows="5" placeholder="Descriu el problema..." aria-label="Descripció de la Incidència" required></textarea>
+          </fieldset>
+
+          <button type="submit">Enviar Incidència</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
