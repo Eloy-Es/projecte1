@@ -125,4 +125,13 @@ a {
     object-fit: contain;
 }
 
-
+/*
+@media (max-width: 480px) {
+  
+    .price .pay-now,
+    .price .pay-later {
+    padding: 5px;
+    width: 100px;
+}
+  }^
+  */

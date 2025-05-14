@@ -80,7 +80,7 @@ body {
 }
 
 .nav-secundari a:hover {
-  background-color: #B32A2D;
+  background-color: #D30205;
   color: #f4f4f4;
   opacity: 1;
 }
@@ -103,7 +103,7 @@ body {
 }
 .plans a {
   color: #f4f4f4;
-  background-color: #B32A2D;
+  background-color: #D30205;
   border: 2px solid #ffc107;
   border-radius: 8px;
 }
@@ -124,7 +124,7 @@ body {
 }
 
 .politiques a:hover {
-  background-color: #B32A2D;
+  background-color: #D30205;
   color: #f4f4f4;
   opacity: 1;
 }
@@ -142,7 +142,11 @@ body {
 }
 
 .plan-description h2 {
-  color: #B32A2D;
+  color: #D30205;
+}
+
+article h2{
+  color: #D30205;
 }
 
 .plan-description p {
